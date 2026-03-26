@@ -1,4 +1,4 @@
-# UMBC Men’s Soccer Predictive Analytics (2023–2025)
+# UMBC Men’s Soccer Predictive Analytics 
 
 A structured predictive analytics project modeling how UMBC men’s soccer matches are played and how outcomes unfold using interpretable statistical methods.
 
