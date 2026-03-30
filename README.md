@@ -1,4 +1,4 @@
-# UMBC Men’s Soccer Predictive Analytics 
+# UMBC Men’s Soccer Predictive Analytics (2023–2025)
 
 A structured predictive analytics project modeling how UMBC men’s soccer matches are played and how outcomes unfold using interpretable statistical methods.
 
@@ -14,24 +14,24 @@ The work reflects a professional analytics workflow, moving from exploratory per
 
 ---
 
-# Project Overview
+## Project Overview
 
 This project consists of multiple analytical notebooks that build toward a complete match simulation framework.
 
 The work progresses from:
 
-- Performance analysis  
-- Contextual modeling  
-- Opponent strength estimation  
-- Match simulation  
+- Performance analysis
+- Contextual modeling
+- Opponent strength estimation
+- Match simulation
 
 Rather than predicting a single scoreline, the goal is to simulate how matches are likely to unfold and estimate probabilistic outcomes such as wins, draws, losses, expected points, and expected goal difference.
 
 ---
 
-# Notebooks in This Project
+## Notebooks in This Project
 
-## 1. xG Analysis (Attacking Model)
+### 1. xG Analysis (Attacking Model)
 
 This notebook focuses on modeling **expected goals scored (xG)**.
 
@@ -53,7 +53,7 @@ Instead of relying only on goals scored, the model estimates how many goals UMBC
 
 ---
 
-## 2. xGA Analysis (Defensive Model)
+### 2. xGA Analysis (Defensive Model)
 
 This notebook models **expected goals against (xGA)**.
 
@@ -72,7 +72,7 @@ The defensive model uses:
 
 ---
 
-## 3. Conference vs Non-Conference Analysis
+### 3. Conference vs Non-Conference Analysis
 
 This notebook analyzes structural differences between:
 
@@ -92,7 +92,7 @@ Findings explore:
 
 ---
 
-## 4. Opponent Strength Modeling
+### 4. Opponent Strength Modeling
 
 This notebook builds a **leak-free opponent strength metric** using prior UMBC results only.
 
@@ -110,15 +110,13 @@ This metric becomes a key input in both attack and defense models.
 
 ---
 
-## 5. Match Simulation Framework
+### 5. Match Simulation Framework
 
 The final stage integrates all previous analysis into a predictive simulation system.
 
 Three approaches were built:
 
----
-
-### A) Simple Approach (Baseline)
+#### A) Simple Approach (Baseline)
 
 - Uses historical context averages (home vs away, conference vs non-conference)
 - Estimates match inputs using typical values
@@ -134,9 +132,7 @@ Three approaches were built:
 - Treats future matches as “typical” scenarios
 - Not strongly opponent-specific
 
----
-
-### B) Better Approach (Opponent-Aware)
+#### B) Better Approach (Opponent-Aware)
 
 - Uses regression models to predict:
   - Shots on goal
@@ -157,20 +153,18 @@ Goals are then simulated using these predicted inputs.
 - Predicted inputs are fixed per match
 - Only goal scoring is random
 
----
-
-### C) Better++ Two-Stage Stochastic Model (Most Realistic)
+#### C) Better++ Two-Stage Stochastic Model (Most Realistic)
 
 “Stochastic” means randomness is built into the model.
 
 This version:
 
-1. Simulates how the match is played  
+1. Simulates how the match is played
    - Shot volume (Negative Binomial)
    - Shot accuracy variation
-   - Defensive pressure variation  
+   - Defensive pressure variation
 
-2. Simulates goals based on those simulated conditions  
+2. Simulates goals based on those simulated conditions
 
 **Benefits:**
 - Captures uncertainty in match flow
@@ -182,7 +176,7 @@ This is the strongest version of the framework.
 
 ---
 
-# Key Modeling Techniques
+## Key Modeling Techniques
 
 - Poisson Regression (Goals)
 - Negative Binomial Regression (Shot Volume)
@@ -193,7 +187,7 @@ This is the strongest version of the framework.
 
 ---
 
-# Results Summary
+## Results Summary
 
 Across models:
 
@@ -207,7 +201,7 @@ Overall, the **Better++ two-stage stochastic model** is the strongest framework 
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```text
 umbc-mens-soccer-predictive-analytics/
@@ -226,10 +220,11 @@ umbc-mens-soccer-predictive-analytics/
 │   ├── team_match_2025.csv
 │
 └── .gitignore
+```
 
 ---
 
-# Why This Project Matters
+## Why This Project Matters
 
 This project shows how to:
 
@@ -242,7 +237,7 @@ Rather than predicting a single score, this framework produces probabilistic mat
 
 ---
 
-# Future Extensions
+## Future Extensions
 
 The next phase of this project will expand the analysis beyond the current team-level simulation framework and move toward more detailed and interactive analytics.
 
@@ -273,7 +268,7 @@ Together, these extensions will transform the project from a team-level predicti
 
 ---
 
-# Author
+## Author
 
 **Jervon Drakes**  
 Sports Analytics & Predictive Modeling  
