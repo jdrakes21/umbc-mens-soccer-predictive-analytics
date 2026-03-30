@@ -208,11 +208,11 @@ umbc-mens-soccer-predictive-analytics/
 │
 ├── README.md
 ├── notebooks/
-│   ├── 01_xg_analysis.ipynb
-│   ├── 02_xga_analysis.ipynb
-│   ├── 03_conference_vs_nonconference_analysis.ipynb
-│   ├── 04_opponent_strength_modeling.ipynb
-│   ├── 05_match_simulation_framework.ipynb
+│   ├── xg_analysis.ipynb
+│   ├── defensive_modelxga_analysis.ipynb
+│   ├── conference_vs_nonconference_analysis.ipynb
+│   ├── opponent_strength.ipynb
+│   ├── match_simulation_framework.ipynb
 │
 ├── data/
 │   ├── team_match_2023.csv
