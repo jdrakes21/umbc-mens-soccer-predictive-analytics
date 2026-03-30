@@ -207,6 +207,26 @@ Overall, the **Better++ two-stage stochastic model** is the strongest framework 
 
 ---
 
+# Repository Structure
+
+```text
+umbc-mens-soccer-predictive-analytics/
+│
+├── README.md
+├── notebooks/
+│   ├── 01_xg_analysis.ipynb
+│   ├── 02_xga_analysis.ipynb
+│   ├── 03_conference_vs_nonconference_analysis.ipynb
+│   ├── 04_opponent_strength_modeling.ipynb
+│   ├── 05_match_simulation_framework.ipynb
+│
+├── data/
+│   ├── team_match_2023.csv
+│   ├── team_match_2024.csv
+│   ├── team_match_2025.csv
+│
+└── .gitignore
+
 # Why This Project Matters
 
 This project shows how to:
