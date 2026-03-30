@@ -227,6 +227,8 @@ umbc-mens-soccer-predictive-analytics/
 │
 └── .gitignore
 
+---
+
 # Why This Project Matters
 
 This project shows how to:
