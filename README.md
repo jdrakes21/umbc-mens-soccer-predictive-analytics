@@ -1,4 +1,4 @@
-# UMBC Men’s Soccer Predictive Analytics (2023–2025)
+# UMBC Men’s Soccer Predictive Analytics 
 
 A structured predictive analytics project modeling how UMBC men’s soccer matches are played and how outcomes unfold using interpretable statistical methods.
 
@@ -210,7 +210,7 @@ umbc-mens-soccer-predictive-analytics/
 ├── notebooks/
 │   ├── xg_analysis.ipynb
 │   ├── defensive_modelxga_analysis.ipynb
-│   ├── conference_vs_nonconference_analysis.ipynb
+│   ├── Expected_goal_difference.ipynb
 │   ├── opponent_strength.ipynb
 │   ├── match_simulation_framework.ipynb
 │
